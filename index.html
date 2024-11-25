@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbyLL_JPksNod4iwsGatXWHaexZEurJAl2cC4RmkQJvJ-hDfTz8zO8wLD0gB9Ry9wd9Bmg/exec"
+>
+<meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5, user-scalable=no"> 
+<head>
+<title>סקאוטינג</title>
+</head>
+<body style="background-color: #e2bcff;">
+<label for="name"> שם סקאוטר: </label> 
+<br>
+<input type="text" id="name" name="name" >
+<br/>
+<br />   
+<label for="number"> מספר קבוצה: </label>
+<br>
+<input type="number" id="number" name="number"> 
+<br />
+<label for="match num"> מספר מקצה: </label>
+<br>
+<input type="number" id="match num" name="match num"> 
+<br />
+<br>
+<p> <b> אוטונומי</b> 
+<br  />
+<br />
+<label for="start"> :התחלה אוטונומי</label>
+<br>
+<select name="start" id="start">
+<option value="0">בחירה--</option>
+<option value="sample">סמפל</option>
+<option value="specimen">ספסימן</option>
+</select>
+<br>
+<br>
+<select name="start" id="start">
+  <option value="0">בחירה--</option>
+  <option value="basket">ליד סל</option>
+  <option value="human player">ליד היומן פלייר</option>
+  </select>
+<br  />
+<br  />
+<label for="auto">האם יש אוטונומי?</label>
+<br>
+<input type="checkbox" id="yes-no" name=" האם יש אוטונומי" value="yes">
+<label for="vehicle1">   </label><br>
+<br>
+<br>     
+          <style>
+.button1 {
+  background-color:  #FFF06D;
+}
+.button2 {
+  background-color: #e1f5fe;
+}
+   .button3 {
+  background-color: #b1fcc1; 
+   }
+   .button4 {
+  background-color: #66bb6a; 
+   }
+   .button5 {
+  background-color: #ce93d8;
+   }
+ .button6 {
+  background-color: #ffb5e6;
+}
+  .button7 {
+  background-color: #f7e1cd;
+   }
+ .button8 {
+  background-color: #FB8D65;
+ }
+ .button9 {
+ background-color: #ffcce0;
+}
+               .button10 {
+ background-color:#33d6ff;
+}
+.button11 {
+ background-color: #81f3be;
+ }    
+ .button12 {
+ background-color: #fff895;
+ }
+ .button13 {
+ background-color: #ff38ee;
+ }        
+ .button14 {
+ background-color: #b338d8;
+ }    
+ .button15 {
+ background-color: #ffcce0;
+ } 
+ .button16 {
+ background-color: #ffcce0;
+ } 
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #660CAB; 
+  cursor: pointer; 
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #DCBFF2; /* purple  background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+</style>
+
+<p>אוטונומי </p>
+
+<div style="color:black" class="plusminus-headline">סמפל סל נמוך:</div>
+      <div class="number-input">
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="low basket sample auto" value="0" type="number"  >
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+<div style="color:black" class="plusminus-headline"> סמפל סל גבוה:</div>
+      <div class="number-input">
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="low basket sample auto" value="0" type="number"  >
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+        <br>
+ <div style="color:black" class="plusminus-headline"> סמפל בבסיס/היומן פלייר :</div>
+      <div class="number-input">
+        <button class="plusminus button14" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="base sample auto" value="0" type="number"  >
+        <button class="plusminus button14" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+  <div style="color:black" class="plusminus-headline">:ספסימן מוט נמוך</div>
+      <div class="number-input">
+        <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+  <div style="color:black" class="plusminus-headline">:ספסימן מוט גבוה</div>
+      <div class="number-input">
+        <button class="plusminus button11" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button11" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+  <!-- <div style="color:black" class="plusminus-headline">:פספוס סל</div>
+      <div class="number-input">
+        <button class="plusminus button12" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button12" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button> -->
+     <br>
+  <div style="color:black" class="plusminus-headline">:פספוס/טעות</div>
+      <div class="number-input">
+        <button class="plusminus button13" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button13" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+<br>
+<br>
+<br>
+<p> טלאופ </p>
+
+
+ 
+<div style="color:black" class="plusminus-headline">סמפל סל נמוך:</div>
+      <div class="number-input">
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels stage tele" value="0" type="number"  >
+        <button class="plusminus button5" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+<div style="color:black" class="plusminus-headline"> סמפל סל גבוה:</div>
+      <div class="number-input">
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels wall tele" value="0" type="number"  >
+        <button class="plusminus button6" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+ <div style="color:black" class="plusminus-headline"> :סמפל בבסיס/ היומן פלייר</div>
+      <div class="number-input">
+        <button class="plusminus button14" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="pixels wall tele" value="0" type="number"  >
+        <button class="plusminus button14" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+     <br>
+  <div style="color:black" class="plusminus-headline">:ספסימן מוט נמוך</div>
+      <div class="number-input">
+        <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button8" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+  <div style="color:black" class="plusminus-headline">:ספסימן מוט גבוה</div>
+      <div class="number-input">
+        <button class="plusminus button11" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button11" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+  <!-- <div style="color:black" class="plusminus-headline">:פספוס סל</div>
+      <div class="number-input">
+        <button class="plusminus button12" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button12" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button> -->
+     <br>
+
+  <div style="color:black" class="plusminus-headline">:פספוס/טעות</div>
+      <div class="number-input">
+        <button class="plusminus button13" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:40pt;">-</button>
+        <input class="quantity" min="0" max="50" name="missed mosiac" value="0" type="number"  >
+        <button class="plusminus button13" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:40pt;">+</button>
+     <br>
+
+<br>
+<br />
+<p>תלייה</p>
+<br>
+<select name="start" id="start">
+  <option value="0st">אין</option>
+<option value="0st">חנייה</option>
+<option value="1st">מוט ראשון</option>
+<option value="2nd">מוט שני</option>
+</select>
+<p><b>אחרי המקצה</b></p>
+
+<br />
+<label for = driving> <b>נהיגה ושליטה ברובוט:</b></label>
+<br >
+<div class="slidecontainer">
+<input type="range" value="1" min="1" max="3" class="slider" name="robot control" oninput="this.nextElementSibling.value = this.value">
+<output> 1 </output>
+</div> 
+<br>
+<br />
+<label for="notes">הערות:</label>
+<br />
+<textarea id="notes" name="notes" rows="10" cols="25">
+</textarea>
+<br />         
+<button id="submit" type="submit"> submit</button>
+<script> $('#submit').click(function() {
+ $(this).attr('disabled','disabled');
+}); 
+</script>   
+</form>   
+</body>
+</html>
